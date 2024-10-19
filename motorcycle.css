@@ -1,0 +1,206 @@
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+nav ul li a:hover {
+    color: #f4b400;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('images/xpulse.png'); /* Ensure the image path is correct */
+    height: 87vh; /* Adjusts the section height */
+    background-size: cover; /* Ensures the image covers the section */
+    background-position: center; /* Keeps the image centered */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Makes the background stay fixed during scrolling */
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adds a dark overlay to enhance text visibility */
+    z-index: -1;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Adds shadow to the text */
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Adds shadow to the text */
+    margin-bottom: 10px;
+}
+
+.btn {
+    background-color: #f4b400;
+    padding: 10px 20px;
+    color: #333;
+    border: none;
+    border-radius: 22px;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #333;
+    color: white;
+}
+
+#vehicles {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff; /* Optional, depending on your site's background */
+}
+
+#vehicles h2 {
+    font-size: 2em;
+    color: #e63946; /* Same color as your heading */
+    margin-bottom: 40px;
+}
+
+.vehicle-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.vehicle-item {
+    text-align: center;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.vehicle-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.vehicle-item h3 {
+    margin-top: 15px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.vehicle-item p {
+    font-size: 1em;
+    color: #888;
+}
+
+.vehicle-item:hover {
+    transform: scale(1.05);
+}
+
+
+/* Contact Section */
+#contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#contactForm input, #contactForm textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contactForm button {
+    background-color: #f4b400;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contactForm button:hover {
+    background-color: #333;
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
