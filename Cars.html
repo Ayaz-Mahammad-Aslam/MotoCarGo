@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MotoCarGo - Car & Motorcycle Rentals</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">MotoCarGo</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Motorcycles.html">Rent a Bike</a></li>
+                <li><a href="Cars.html">Rent a Car</a></li>
+                <li><a href="Scooters.html">Rent a Scooty</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="cars">
+            <h1>Rent Your Car Today with <span>Motocargo!</span></h1>
+            <p>Rent a car from Motocargo and explore your destination in comfort and style!</p>
+            <a href="#vehicles" class="btn">View Rentals</a>
+        </div>
+    </section>
+
+    <section id="vehicles">
+        <h2>Cars Available On Rent</h2>
+        <div class="vehicle-grid">
+            <div class="vehicle-item">
+                <a href="#booking-form">
+                    <img src="images/car1.png" alt="Maruti Suzuki Alto K10">
+                </a>
+                <h3>Maruti Suzuki Alto K10</h3>
+                <p>starting from ₹1200/day</p>
+            </div>
+            <div class="vehicle-item">
+                <a href="#booking-form">
+                    <img src="images/car2.png" alt="Maruti Suzuki Swift">
+                </a>
+                <h3>Maruti Suzuki Swift</h3>
+                <p>starting from ₹1400/day</p>
+            </div>
+            <div class="vehicle-item">
+                <a href="#booking-form">
+                    <img src="images/car3.png" alt="Maruti Suzuki Swift Dzire">
+                </a>
+                <h3>Maruti Suzuki Swift Dzire</h3>
+                <p>starting from ₹1600/day</p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="vehicle-grid">
+            <div class="vehicle-item">
+                <a href="#booking-form">
+                    <img src="images/car4.png" alt="Hyundai Creta">
+                </a>
+                <h3>Hyundai Creta</h3>
+                <p>starting from ₹1800/day</p>
+            </div>
+            <div class="vehicle-item">
+                <a href="#booking-form">
+                    <img src="images/car5.png" alt="Maruti Suzuki Jimmy">
+                </a>
+                <h3>Maruti Suzuki Jimmy</h3>
+                <p>starting from ₹2200/day</p>
+            </div>
+            <div class="vehicle-item">
+                <a href="#booking-form">
+                    <img src="images/car6.png" alt="Mahindra Scorpio">
+                </a>
+                <h3>Mahindra Scorpio</h3>
+                <p>starting from ₹2600/day</p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="vehicle-grid">
+            <div class="vehicle-item">
+                <a href="#booking-form">
+                    <img src="images/car7.png" alt="Kia Seltos">
+                </a>
+                <h3>Kia Seltos</h3>
+                <p>starting from ₹3000/day</p>
+            </div>
+            <div class="vehicle-item">
+                <a href="#booking-form">
+                    <img src="images/car8.png" alt="Toyota Fortuner">
+                </a>
+                <h3>Toyota Fortuner</h3>
+                <p>starting from ₹3500/day</p>
+            </div>
+            <div class="vehicle-item">
+                <a href="#booking-form">
+                    <img src="images/car9.png" alt="Mahindra Thar">
+                </a>
+                <h3>Mahindra Thar</h3>
+                <p>starting from ₹4000/day</p>
+            </div>
+        </div>
+        </section>
+
+        <div id="booking-form">
+            <h2>Book Your Vehicle</h2>
+            <form>
+                <label for="motorcycle">Select your Car</label>
+            <select id="motorcycle" name="motorcycle" required>
+                <option value="">Select your Car</option>
+                <option value="motorcycle1">Maruti Suzuki Alto K10</option>
+                <option value="motorcycle2">Maruti Suzuki Swift</option>
+                <option value="motorcycle3">Maruti Suzuki Swift Dzire</option>
+                <option value="motorcycle3">Hyundai Creta</option>
+                <option value="motorcycle3">Maruti Suzuki Jimmy</option>
+                <option value="motorcycle3">Mahindra Scorpio</option>
+                <option value="motorcycle3">Kia Seltos</option>
+                <option value="motorcycle3">Toyota Fortuner</option>
+                <option value="motorcycle3">Mahindra Thar</option>
+            </select>
+                
+                <div class="date-inputs">
+                    <div>
+                        <label for="pickup">Pickup Date</label>
+                        <input type="date" id="pickup" name="pickup">
+                    </div>
+                    <div>
+                        <label for="dropoff">Dropoff Date</label>
+                        <input type="date" id="dropoff" name="dropoff">
+                    </div>
+                </div>
+                
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" name="full-name" placeholder="Full Name">
+                
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email">
+        
+                <button type="submit">Book Now</button>
+            </form>
+        </div>
+
+
+        <footer>
+            <div class="container">
+                <div class="footer-content">
+                    <h3>Contact Us</h3>
+                    <p>Email: MotoCarGo@gmail.com</p>
+                    <p>Phone: +91 8876523557</p>
+                    <p>Address: Jalukbari, Saraighat Nagar</p>
+                </div>
+                <div class="footer-content">
+                    <h3>Popular Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="Motorcycles.html">Rent a Bike</a></li>
+                        <li><a href="Cars.html">Rent a Car</a></li>
+                        <li><a href="Scooters.html">Rent a Scooty</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>         
+            </div>
+            <div class="bottom-bar">
+            <p>&copy; 2024 MotoCarGo. All Rights Reserved.</p>
+        </div>
+        </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
